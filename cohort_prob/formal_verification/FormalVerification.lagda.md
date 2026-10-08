@@ -532,7 +532,7 @@ module FacProof where
     ...                 | no ¬eq = ⊥-elim (¬eq refl)
 
     step1 : ⟨ pre ⟩ (i ← $ n) ⟨ O1 ⟩
-    step1 = {!!} -- TODO: fixme
+    step1 = {!!} -- TODO:  Hints: you need to make use of conseqR and assignR and ⇒-refl with step1-pre 
 
 
     -- proving step 2
@@ -554,7 +554,7 @@ module FacProof where
     -- step2 is showing
     --  { O1 } r = 1 { O2 } , note that O2 is I
     step2 : ⟨ O1 ⟩ (r ← C 1ℤ) ⟨ I ⟩
-    step2 = {!!} -- TODO: fixme 
+    step2 = {!!} -- TODO:  Hints: you need to make use of conseqR and assignR and ⇒-refl with step2-pre
 
 
     -- proving step 3
@@ -606,7 +606,7 @@ module FacProof where
     -- body-r is a proof showing
     --    { P1 } r = r * i { P2 } 
     body-r : ⟨ P1 ⟩ (r ← ($ r) *ʰ ($ i)) ⟨ P2 ⟩ 
-    body-r = {!!} -- TODO. Hints: you need to make use of conseqR and assignR and ⇒-refl
+    body-r = {!!} -- TODO. Hints: you need to make use of conseqR and assignR and ⇒-refl with body-r-pre
 
     -- body-i is a proof showing
     --    { P2 } i = i - 1 { I }
