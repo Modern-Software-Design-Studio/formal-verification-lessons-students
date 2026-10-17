@@ -374,20 +374,20 @@ We model addition with two axioms:
 $$
 \begin{array}{ll}
 ({\tt AddZero}) & \forall n.\ add(zero, n) = n \\
-({\tt AddSuc})  & \forall m n.\ add(suc(m), n) = suc(add(m, n))
+({\tt AddSuc})  & \forall m\ n.\ add(suc(m), n) = suc(add(m, n))
 \end{array}
 $$
 
 The goal is
 
 $$
-\forall m n p.\ add(add(m,n), p) = add(m, add(n,p)).
+\forall m\ n\ p.\ add(add(m,n), p) = add(m, add(n,p)).
 $$
 
 We prove it by linear induction on $m$. Let
 
 $$
-\psi(m) \equiv \forall n p.\ add(add(m,n), p) = add(m, add(n,p)).
+\psi(m) \equiv \forall n\ p.\ add(add(m,n), p) = add(m, add(n,p)).
 $$
 
 The induction rule is
@@ -472,7 +472,7 @@ $$
 By linear induction we conclude $\forall m.\ \psi(m)$, i.e.
 
 $$
-\forall m n p.\ add(add(m,n), p) = add(m, add(n,p)).
+\forall m\ n\ p.\ add(add(m,n), p) = add(m, add(n,p)).
 $$
 
 #### The same proof in Agda
