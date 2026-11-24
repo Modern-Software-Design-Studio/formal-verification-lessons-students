@@ -108,7 +108,7 @@ cabal install Agda
 Agda needs the *standard library*. The setup used for PLFA clones the whole PLFA repository and registers the bundled standard library:
 
 ```bash
-git clone https://github.com/plfa/plfa.github.io.git ~/plfa
+git clone  --depth 1 https://github.com/plfa/plfa.github.io.git ~/plfa
 cd ~/plfa
 ```
 
