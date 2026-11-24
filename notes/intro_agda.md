@@ -110,6 +110,7 @@ Agda needs the *standard library*. The setup used for PLFA clones the whole PLFA
 ```bash
 git clone  --depth 1 https://github.com/plfa/plfa.github.io.git ~/plfa
 cd ~/plfa
+git submodule update --init
 ```
 
 Tell Agda where the library is by creating two files:
