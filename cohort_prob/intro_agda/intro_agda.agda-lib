@@ -1,0 +1,4 @@
+name: intro_agda
+include: .
+depend: standard-library
+ 
